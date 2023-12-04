@@ -3,6 +3,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I exist</title>
+
+    <!-- Tailwind CSS Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+
+    <!-- Bootstrap Links -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
     <style>
         h1 {
             color: brown;
@@ -110,6 +121,45 @@
             display: block;
             margin-top: 20px;
         }
+         /* CSS Animation */
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+
+        /* Interaction */
+        .interactive-box {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .interactive-box:hover {
+            background-color: #2c3e50;
+        }
+
+        /* Tailwind CSS Example */
+        .tw-button {
+            @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
+        }
+
+        /* Bootstrap Example */
+        .bs-button {
+            margin-top: 10px;
+        }
     </style>
     </style>
 </head>
@@ -159,10 +209,6 @@
     <!-- Example Div -->
     <div>This is a div with some content.</div>
     
-    <div id="footer">
-        <p>&copy; 2023 My Website</p>
-    </div>
-
     <iframe src="https://www.example.com" width="600" height="400"></iframe>
 
     <div>using a div element.</div>
@@ -207,6 +253,33 @@
             the about page
         </a>
         <img src="https://media.tenor.com/iCgOuohU11kAAAAC/dancing-polish-cow-at4am.gif" width="400px" height="400px">
+  <!-- CSS Animation -->
+    <div style="animation: bounce 2s infinite;" class="text-center mt-4">
+        <h2>Bouncing Animation</h2>
+        <div class="interactive-box">Hover me</div>
+    </div>
+
+    <!-- Interaction -->
+    <div class="text-center mt-4">
+        <h2>Interactive Box</h2>
+        <div class="interactive-box">Click me</div>
+    </div>
+
+    <!-- Tailwind CSS Example -->
+    <div class="text-center mt-4">
+        <h2>Tailwind CSS Button</h2>
+        <button class="tw-button">Click me</button>
+    </div>
+
+    <!-- Bootstrap Example -->
+    <div class="text-center mt-4">
+        <h2>Bootstrap Button</h2>
+        <button class="btn btn-primary bs-button">Click me</button>
+    </div>
+
+        <div id="footer">
+        <p>&copy; 2023 My Website</p>
+    </div>
 
      <div class="nav-bar">
         <h2>Navigation Bar</h2>
