@@ -35,6 +35,41 @@
             padding: 10px;
             text-align: center;
         }
+         a:link {
+            color: blue; /* unvisited link */
+        }
+
+        a:visited {
+            color: purple; /* visited link */
+        }
+
+        a:hover {
+            color: red; /* mouse over link */
+        }
+
+        a:active {
+            color: green; /* selected link */
+        }
+
+        /* Pseudo-elements */
+        p::first-line {
+            font-weight: bold;
+        }
+
+        p::first-letter {
+            font-size: 150%;
+            color: darkred;
+        }
+
+        div::before {
+            content: "Before Content ";
+            color: navy;
+        }
+
+        div::after {
+            content: " After Content";
+            color: maroon;
+        }
     </style>
 </head>
     <link rel="stylecss" href="stylecss.css">
@@ -75,6 +110,29 @@
         </tr>
     </table>
 
+    <a href="https://en.wikipedia.org/wiki/Flower">Visit Example Website</a>
+
+    <!-- Example Paragraph -->
+    <p>This is a paragraph with some text. It's a simple example for pseudo-elements.</p>
+
+    <!-- Example Div -->
+    <div>This is a div with some content.</div>
+    
+    <div id="footer">
+        <p>&copy; 2023 My Website</p>
+    </div>
+
+    <iframe src="https://www.example.com" width="600" height="400"></iframe>
+
+    <div>using a div element.</div>
+
+    <span>using a span element.</span>
+
+     <a href= "idkman.html">
+            the about page
+        </a>
+        <img src="https://media.tenor.com/iCgOuohU11kAAAAC/dancing-polish-cow-at4am.gif" width="400px" height="400px">
+
      <div class="nav-bar">
         <h2>Navigation Bar</h2>
         <ul>
@@ -91,21 +149,6 @@
         <a href="https://www.example.com">Visit Example Website</a>
     </div>
 
-    
-    <div id="footer">
-        <p>&copy; 2023 My Website</p>
-    </div>
-
-    <iframe src="https://www.example.com" width="600" height="400"></iframe>
-
-    <div>using a div element.</div>
-
-    <span>using a span element.</span>
-
-     <a href= "idkman.html">
-            the about page
-        </a>
-        <img src="https://media.tenor.com/iCgOuohU11kAAAAC/dancing-polish-cow-at4am.gif" width="400px" height="400px">
 </body>
 </html>
 </body>
